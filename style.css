@@ -14,7 +14,7 @@
   --background: #22212C;
   --backgroudwrapper: #302F3D;
   --button: #CB92B1;
-
+  --javascript: #E7DE79;
 }
 
 /* Utilizando flex basis para separação da tela */
@@ -212,3 +212,57 @@ body {
 
 
 /* #### PARTE II - Inicianando a MAIN - FLEX 1 #### */
+
+main .wrapper {
+  background-color: var(--backgroudwrapper);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+
+main .cardprojects {
+  display: flex;
+  gap: 3rem;
+}
+
+main .project {
+
+  background-color: var(--backgroudwrapper);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+main .project p {
+
+  margin: 2.2rem 0rem;
+
+}
+
+main .cardprojects .projecticons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .cardprojects .projecticons .github {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+
+}
+
+main .cardprojects .projecticons .jsicon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--javascript);
+  border-radius: 50%;
+}
