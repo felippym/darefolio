@@ -193,5 +193,22 @@ body {
 .container .cardwrapper .wrapper .experiences {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+
+  padding: 2rem 4rem;
 }
+
+.container .cardwrapper .wrapper .experiences h3 {
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.container .cardwrapper .wrapper .experiences p {
+
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+/* #### PARTE II - Inicianando a MAIN - FLEX 1 #### */
