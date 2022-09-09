@@ -26,13 +26,17 @@ body {
 
 .container {
   display: flex;
-  margin-top: 4rem;
+  margin: 0 auto;
+
+  padding: 4rem;
+  gap: 4rem;
+
+  max-width: 140rem;
 
 }
 
 .container aside {
-  flex-basis: 25%;
-
+  width: 30%;
 }
 
 .container main {
@@ -47,7 +51,7 @@ body {
   margin: 2.5rem 0 .5rem 0;
 }
 
-.container .cardwrapper .wrapper.profile img {
+.profilepic {
   width: 12.8rem;
   height: 12.8rem;
   border-radius: 50%;
@@ -92,8 +96,8 @@ body a {
 /* alinhando os wrappers */
 
 .container .cardwrapper {
-  width: 80%;
-  margin: auto;
+
+
 
   display: flex;
   flex-direction: column;
@@ -213,6 +217,10 @@ body a {
 }
 
 
+
+
+
+
 /* #### PARTE II - Inicianando a MAIN - FLEX 1 #### */
 
 main .wrapper {
@@ -236,7 +244,7 @@ main .project {
   border-radius: 20px;
   padding: 3rem 2rem;
 
-  display: flex;
+  flex-basis: 50%;
   flex-direction: column;
 
 
@@ -290,4 +298,87 @@ main .cardprojects .projecticons .js-skill {
   height: 1.5rem;
   background-color: var(--javascript);
   border-radius: 50%;
+}
+
+/* Começando os POSTS */
+
+.posts h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.posts h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.posts p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.posts {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.recentposts {
+  margin-top: 3rem;
+}
+
+
+
+.posts.wrapper>div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.posts.wrapper .tags {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* ###### MOBILE ######  */
+
+@media (max-width:1000px) {
+
+  main .cardprojects {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width:850px) {
+
+
+
+  .container {
+    flex-direction: column;
+    padding: 4rem 8rem;
+  }
+
+  .container aside {
+    width: 100%;
+  }
+
+
+
+}
+
+
+@media (max-width:600px) {
+
+
+
+  .container {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
 }
